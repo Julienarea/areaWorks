@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>_blank</title>
+	<link rel="stylesheet" type="text/css" href="styles/_blank.css">
+</head>
+<body>
+	<div class="main-page-container">
+		<nav class="nav-bar">
+			<div class="nav-bar-items">
+				<h2>Projects</h2>
+				<a href="index.html" class="nav-bar-item">
+					<img src="images/idea.png" alt="">
+					<div class="nav-bar-item-text">Service</div>
+				</a>
+				<a href="audio.html" class="nav-bar-item">
+					<img src="images/idea.png" alt="">
+					<div class="nav-bar-item-text">Audio</div>
+				</a>
+				<a href="_blank.html" class="nav-bar-item nav-bar-item-active">
+					<img src="images/idea.png" alt="">
+					<div class="nav-bar-item-text">_blank</div>
+				</a>
+				<a href="_blank2.html" class="nav-bar-item">
+					<img src="images/idea.png" alt="">
+					<div class="nav-bar-item-text">_blank2</div>
+				</a>
+				<a href="_blank3.html" class="nav-bar-item">
+					<img src="images/idea.png" alt="">
+					<div class="nav-bar-item-text">_blank3</div>
+				</a>
+			</div>
+		</nav>
+		<div class="main-content">
+			<div class="form-container">
+				<form action="" class="textarea-form">
+					<div class="common-title form-title">Написать нам</div	>
+					<input type="text" name="username" 	placeholder="Username">
+					<input type="email" name="email" 	placeholder="Email">
+					<textarea placeholder="Сообщение..."></textarea>
+					<button>Отправить</button>
+				</form>
+			</div>
+			<div class="form-container radio-container">
+				<div class="common-title radio-title">Выберите ваш любимый язык программирования</div>
+				<form action="" class="radio-form bg-form">
+					<input type="radio" name="language" value="JavaScript" checked>JavaScript<br>
+					<input type="radio" name="language" value="Python">Python<br>
+					<input type="radio" name="language" value="Java">Java<br>
+					<input type="radio" name="language" value="C++">C++<br>
+					<input type="radio" name="language" value="Ruby">Ruby<br>
+				</form>
+				<button>Отправить</button>
+			</div>
+			<div class="form-container checkbox-container">
+				<div class="common-title checkbox-title">Выберите ваши предпочитаемые животные</div>
+				<form action="" class="checkbox-form bg-form">
+					<input type="checkbox" name="animal" value="dog">Собака<br>
+					<input type="checkbox" name="animal" value="cat">Кошка<br>
+					<input type="checkbox" name="animal" value="bird">Птица<br>
+					<input type="checkbox" name="animal" value="fish">Рыбка<br>
+					<input type="checkbox" name="animal" value="snake">Змея<br>
+				</form>
+				<button>Отправить</button>
+			</div>
+			<div class="select-container form-container">
+				<div class="common-title select-title">Местоположение</div>
+				<div class="select-form-container bg-form">
+					<select name="country">
+						<option value="">Выберите страну</option>
+						<option value="usa">США</option>
+						<option value="canada">Канада</option>
+						<option value="uk">Великобритания</option>
+					</select>
+				</div>
+				<div class="select-form-container bg-form">
+					<select name="city" placeholder="Выберите город">
+						<option value="">Выберите город</option>
+						<option value="newyork">Нью-Йорк</option>
+						<option value="losangeles">Лос-Анджелес</option>
+						<option value="toronto">Торонто</option	>
+						<option value="vancouver">Ванкувер</option>
+						<option value="london">Лондон</option>
+						<option value="manchester">Манчестер</option>
+					</select>
+				</div>
+				<button>Отправить</button>
+			</div>
+			<div class="form-container multiple-container">
+				<div class="common-title">Ваш любимый цвет</div>
+				<select name="favorite-color" class="bg-form multiple-select" multiple>
+					<option value="red">Красный</option>
+					<option value="blue">Синий</option>
+					<option value="yellow">Желтый</option>
+					<option value="gold">Золотой</option>
+					<option value="pink">Розовый</option>
+				</select>
+				<button>Отправить</button>
+			</div>
+			<div class="form-container">
+				<div class="common-title">Кнопка внутри form</div>
+				<form action="" class="bg-form submit-button-form">
+					<input name="submit-form" type="radio">Да<br>
+					<input name="submit-form" type="radio">Нет<br>
+					<input name="submit-form" type="submit" value="Отправить" class="submit-button">
+				</form>
+			</div>
+			<div class="form-container">
+				<div class="common-title">Загрузите свои файлы</div>
+				<form action="" class="">
+					<input type="file" name="file" placeholder="none">
+					<label>Перетащите сюда свои файлы</label>
+					<input type="submit" class="submit-button" value="Отправить">
+				</form>
+			</div>
+			<div class="form-container">
+				<form action="" class="">
+					<fieldset class="fieldset-margin">
+						<legend>Регистрация пользователя</legend>
+						<input required type="text" placeholder="Имя пользователя" name="username">
+						<input required type="email" placeholder="Email" name="email">
+						<input required type="password" placeholder="Пароль" name="password">
+						<input required type="password" placeholder="Подтверждение пароля" name="confirmPassword">
+					</fieldset>
+					<fieldset>
+						<legend>Заказ товара</legend>
+						<input required type="text" placeholder="Имя" name="firstname">
+						<textarea required placeholder="Адрес доставки" name="deliveryAddress"></textarea>
+						<div class="input-container">
+							<label for="products">Выбор товара</label>
+							<select required name="products" id="products">
+								<option value="item1">Товар 1</option>
+								<option value="item2">Товар 2</option>
+								<option value="item3">Товар 3</option>
+								<option value="item4">Товар 4</option>
+							</select>
+						</div>
+						<input required type="number" placeholder="Количество товара" name="productsAmount">
+						<textarea placeholder="Дополнительные комментарии" name="additionalComments"></textarea>
+						<input type="submit" class="submit-button" value="Отправить">
+					</fieldset> 
+				</form>
+			</div>
+			<div class="form-container">
+				<form action="">
+					<fieldset>
+						<legend>Форма регистрации</legend>
+						<input type="text" name="username" placeholder="Имя пользователя" required><br>
+						<input type="email" name="email" placeholder="Email" required><br>
+						<input type="password" name="password" placeholder="Пароль" required><br>
+						<input type="password" name="confirmPassword" placeholder=" Подтверждение пароля" required><br>
+						<input type="submit" class="submit-button" value="Зарегистрироваться"><br>
+						<label>
+							<input type="checkbox"> Запомнить
+						</label>
+					</fieldset>
+				</form>
+			</div>
+			<div class="form-container">
+				<form action="">
+					<fieldset class="column-fieldset">
+						<legend>Форма регистрации</legend>
+						<label class="col-label">
+							Имя пользователя
+							<input id="username" type="text" name="username" placeholder="Bob" required>
+						</label>
+						<label class="col-label">
+							Email
+							<input type="email" name="email" placeholder="example@gmail.com" required>
+						</label>
+						<label class="col-label">
+							Пароль
+							<input type="password" name="password" placeholder="12345" required>
+						</label>
+						<label class="col-label">
+							Подтверждение пароля (отключенное)
+							<input type="password" name="confirmPassword" placeholder=" disabled" disabled class="disabled-input">
+						</label>
+						<input type="submit" class="submit-button" value="Зарегистрироваться"><br>
+						<label>
+							<input type="checkbox"> Запомнить
+						</label>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

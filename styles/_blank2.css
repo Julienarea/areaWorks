@@ -1,0 +1,170 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+@font-face {
+   font-family: "Söhne";
+   src: url(../fonts/TestSöhne-Buch.otf) format('opentype');
+   font-weight: normal;
+}
+@font-face {
+   font-family: "Söhne";
+   src: url(../fonts/TestSöhne-Halbfett.otf) format('opentype');
+   font-weight: 600;
+}
+@font-face {
+   font-family: "Söhne";
+   src: url(../fonts/TestSöhne-Kräftig.otf) format('opentype');
+   font-weight: 500;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: rgba(52,53,65,1);
+  font-family: "Söhne", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+/*контейнер всей страницы (если мы используем nav-bar)*/
+.main-page-container {
+  display: flex;
+  flex-grow: 1;
+}
+h2 {
+  display: inline-block;
+  color: rgba(236,236,241,1);;
+  font-size: 24px;
+  line-height: 1.5;
+}
+h1 {
+  color: rgba(236,236,241,1);
+  font-size: 38px;
+  font-weight: 700;
+
+}
+/*Логотип*/
+.common-logo {      
+  text-align: center;                   
+  margin-top: 139px;
+  margin-bottom: 64px;
+}
+/*Ссылки*/
+a {
+  color: #ececf1;
+  text-decoration: none;
+}
+/*Мини-заголовки*/
+h5 {
+  line-height: 20px;
+  color: #a6acb9;
+}
+/*------------------------------------------------------------------- nav-bar*/
+/*
+  ========================================
+  nav-bar
+  ========================================
+*/
+
+.nav-bar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  background-color: #202123;
+  padding: 8px;
+}
+.nav-bar h2 {
+  color: #8e8ea0;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 12px;
+  padding-bottom: 8px;
+}
+
+/*
+  ========================================
+  nav-bar-item
+  ========================================
+*/
+.nav-bar-item-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.nav-bar-item {
+  display: flex;
+  align-self: flex-start;
+  gap: 11px;
+  vertical-align: bottom;
+  padding: 12px;
+  border-radius: 6px;
+}
+.nav-bar-item:hover {
+  background-color: #2a2b32;
+}
+.nav-bar-item.nav-bar-item-active {
+  background-color: #343541;
+}
+.nav-bar img {
+  width: 20px;
+  height: 20px;
+}
+.main-content {
+  max-width: 900px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 260px);
+  display: flex;
+  gap: 50px;
+  flex-flow: row wrap;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+/*------------------------------------------------------------------- nav-bar*/
+/*
+/*
+  ========================================
+  table
+  ========================================
+*/
+table {
+  background-color: #fff;
+  border-collapse: collapse;
+  text-align: justify;
+  box-shadow: 0 0 3px #000;
+  line-height: 1.2;
+  border-radius: 6px;
+}
+th,
+td {
+  padding: 10px 25px;
+  border-bottom: 1px solid #000;
+  height: 120px;
+}
+tr {
+  height: 100%;
+}
+tr:last-child td {
+  border-bottom: 0;
+}
+table img {
+  max-height: 100%;
+  border-radius: 6px;
+}

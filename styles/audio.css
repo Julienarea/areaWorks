@@ -1,0 +1,254 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+================================================================
+nav-bar
+================================================================
+*/
+.main-page-container {
+  display: flex;
+  flex-grow: 1;
+}
+.nav-bar h2 {
+  color: #8e8ea0;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: -4px;
+}
+.nav-bar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  background-color: #202123;
+  padding: 8px;
+}
+.nav-bar a {
+  display: inline-block;
+      font-size: 14px;
+
+    line-height: 20px;
+}
+
+.nav-bar-item {
+  display: flex;
+  align-self: flex-start;
+  gap: 11px;
+  vertical-align: bottom;
+  padding: 12px;
+}
+.nav-bar img {
+  width: 20px;
+  height: 20px;
+}
+/*
+================================================================
+стили
+================================================================
+*/
+
+h5 {
+  line-height: 20px;
+  font-weight: 400;
+  color: #777;
+}
+/*
+================================================================
+Дополнительно
+================================================================
+*/
+
+body {
+  font-family: YSTextRegular,Arial,Helvetica,sans-serif;
+  background-color: #181818;
+}
+
+/*
+================================================================
+header
+================================================================
+*/
+
+
+
+header {
+
+  border-bottom: 1px solid hsla(0,0%,100%,.05);
+  margin: 0;
+  padding: 0;
+  font-size: 44px;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+}
+.logo {
+  vertical-align: top;
+  display: inline-block;
+}
+.logo a{
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 30px;
+  vertical-align: top;
+  color: #fff;
+  font-size: 28px;
+}
+.header-nav {
+  display: inline-block;
+  text-align: left;
+}
+.header-nav li{
+  margin-left: 30px;
+  display: inline-block;
+ 
+}
+.header-nav a{
+  box-sizing: border-box;
+  display: inline-block;
+  height: 74px;
+  font-size: 15px;
+  line-height: 75px;
+  color: hsla(0,0%,100%,.5);
+}
+.header-nav a:hover{
+  color: #fc0;
+}
+.header-nav .nav-active {
+  color: hsla(0,0%,100%,.9);
+  border-bottom: 3px solid #fc0;
+
+}
+
+/*
+================================================================
+page-line
+================================================================
+*/
+.centerblock {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  min-width: 479px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*
+================================================================
+page-line-chart
+================================================================
+*/
+
+.page-line-chart {
+  vertical-align: bottom;
+  margin-top: 40px;
+  font-family: YSTextRegular,Arial,Helvetica,sans-serif;
+  color: #fff;
+}
+.page-line-chart h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.page-line-chart h5 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.song {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.song audio {
+  width: 250px;
+}
+.song .track-info,
+.song p,
+.song audio {
+  display: inline-block;
+  height: 50px;
+  vertical-align: top;
+}
+.song p {
+  text-align: center;
+  height: 50px;
+  width: 30px;
+  line-height: 50px;
+  float: left;
+
+}
+.song img {
+}
+.song .track-info {
+  width: 150px;
+  line-height: 20px;
+  flex-wrap: wrap;
+  display: inline-flex;
+  align-items: left; /* Центрирование по вертикали */
+  justify-content: center; /* Центрирование по горизонтали */
+  flex-direction: column; /* Размещение элементов в столбик */
+}
+.song .track-info h3,
+.song .track-info h5 {
+  margin: 0; /* Удаление отступов */
+  display: block; /* Размещение элементов на разных строках */
+}
+
+
+
+
+
+

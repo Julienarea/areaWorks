@@ -1,0 +1,308 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+@font-face {
+   font-family: "Söhne";
+   src: url(../fonts/TestSöhne-Buch.otf) format('opentype');
+   font-weight: normal;
+}
+@font-face {
+   font-family: "Söhne";
+   src: url(../fonts/TestSöhne-Halbfett.otf) format('opentype');
+   font-weight: 600;
+}
+@font-face {
+   font-family: "Söhne";
+   src: url(../fonts/TestSöhne-Kräftig.otf) format('opentype');
+   font-weight: 500;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: rgba(52,53,65,1);
+  font-family: "Söhne", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.main-page-container {
+  display: flex;
+  flex-grow: 1;
+}
+h2 {
+  display: inline-block;
+  color: rgba(236,236,241,1);;
+  font-size: 24px;
+  line-height: 1.5;
+
+}
+h1 {
+  color: rgba(236,236,241,1);
+  font-size: 38px;
+  font-weight: 700;
+
+}
+h1.common-logo {      
+  text-align: center;                   /*LOGO, Вдруг нужен будет h1 хз*/
+  margin-top: 139px;
+  margin-bottom: 64px;
+}
+a {
+  color: #ececf1;
+  text-decoration: none;
+}
+h5 {
+  line-height: 20px;
+  color: #a6acb9;
+}
+/*------------------------------------------------------------------- nav-bar*/
+/*
+  ========================================
+  nav-bar
+  ========================================
+*/
+
+.nav-bar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  background-color: #202123;
+  padding: 8px;
+}
+.nav-bar h2 {
+  color: #8e8ea0;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 12px;
+  padding-bottom: 8px;
+}
+
+/*
+  ========================================
+  nav-bar-item
+  ========================================
+*/
+.nav-bar-item-text {
+  display: inline-block;
+      font-size: 14px;
+
+    line-height: 20px;
+}
+
+.nav-bar-item {
+  display: flex;
+  align-self: flex-start;
+  gap: 11px;
+  vertical-align: bottom;
+  padding: 12px;
+  border-radius: 6px;
+}
+.nav-bar-item:hover {
+  background-color: #2a2b32;
+}
+.nav-bar-item.nav-bar-item-active {
+  background-color: #343541;
+}
+.nav-bar img {
+  width: 20px;
+  height: 20px;
+}
+.main-content {
+  max-width: 900px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 260px);
+  display: flex;
+  gap: 50px;
+  flex-flow: row wrap;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+/*------------------------------------------------------------------- nav-bar*/
+/*
+  ========================================
+  _blank
+  ========================================
+*/
+.form-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 256px;
+}
+legend,
+.common-title {
+  font-size: 24px;
+  color: #596579;
+}
+.submit-button,
+button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #19c37d;
+  border-radius: 20px ;
+  border: none;
+  box-shadow: 0px 3px #0d8054;
+  color: #fff;
+}
+.input-container,
+form input {
+  background-color: #e4f0f8;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px 0 5px 0;
+  max-width: 196px;
+  border: 1px solid #c3d9e8;
+}
+.bg-form {
+  background-color: #e4f0f8;
+  border: 1px solid #c3d9e8;
+  margin: 15px 0 15px 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+form textarea {
+  background-color: #e4f0f8;
+  padding: 10px 20px 70px 20px;
+  border-radius: 20px;
+  border: 1px solid #c3d9e8;
+  resize: none;
+}
+
+select {
+  border: 1px solid #c3d9e8;
+  border-radius: 20px;
+  margin: 5px 0 5px 0;
+  padding: 2px;
+}
+/*
+  ========================================
+  textarea-form
+  ========================================
+*/
+
+
+form.textarea-form {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-radius: 20px;
+	max-width: 720px;
+}
+
+
+/*
+  ========================================
+  radio-form
+  ========================================
+*/
+
+/*
+  ========================================
+  checkbox-form
+  ========================================
+*/
+
+/*
+  ========================================
+  select
+  ========================================
+*/
+
+select{
+  background-color: #e4f0f8;
+}
+.select-form-container.bg-form {
+  width: 100%;
+  margin: 0;
+}
+.select-container.form-container {
+  gap: 10px;
+}
+/*
+  ========================================
+  select-multiple
+  ========================================
+*/
+select.multiple-select {
+  width: 100%;
+}
+select.multiple-select option {
+  padding: 2px;
+  border-radius: 6px;
+}
+select.multiple-select option:hover {
+  background-color: #c3d9e8;
+}
+select.multiple-select option:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #212121;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+/*
+  ========================================
+  submit-form
+  ========================================
+*/
+/*
+  ========================================
+  file
+  ========================================
+*/
+/*
+  ========================================
+  fieldset-margin
+  ========================================
+*/
+.fieldset-margin
+{
+  margin-bottom: 40px;
+}
+/*
+  ========================================
+  disabled-form
+  ========================================
+*/
+.disabled-input {
+  cursor: not-allowed;
+}
+/*
+  ========================================
+  label
+  ========================================
+*/
+.col-label {
+  margin: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;  
+}
+
