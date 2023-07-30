@@ -1,0 +1,17 @@
+
+body {
+  background-color: #353535;
+  
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.container {
+}
+
+.header__container {
+  height: 200px;
+  margin-bottom: 38px;
+}
