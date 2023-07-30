@@ -28,20 +28,55 @@
         <h1>Services</h1>
       </div>
     </header>
-    <section>
-      <h1>Добавление ссылок</h1>
-      <form id="linkForm">
-        <label for="link">Ссылка:</label>
-        <input type="text" id="link" name="link" required />
+    <section class="Links">
+      <div class="container">
+        <button id="newLinkButton" class="btn btn-primary mb-2">
+          Новый ярлык
+        </button>
 
-        <label for="linkName">Название:</label>
-        <input type="text" id="linkName" name="linkName" required />
+        <div
+          id="linkFormContainer"
+          class="link-form-container"
+          style="display: none"
+        >
+          <form id="linkForm" class="link-form text-dark gap-2">
+            <div class="form-floating">
+              <input
+                type="text"
+                id="link"
+                name="link"
+                class="link-form__input form-control"
+                placeholder="Ссылка:"
+                required
+              />
+              <label for="link" class="link-form__label form-label"
+                >Ссылка:</label
+              >
+            </div>
 
-        <button type="submit">Добавить ссылку</button>
-      </form>
+            <div class="form-floating">
+              <input
+                type="text"
+                id="linkName"
+                name="linkName"
+                class="link-form__input form-control"
+                placeholder="Название:"
+                required
+              />
+              <label for="linkName" class="link-form__label form-label"
+                >Название:</label
+              >
+            </div>
 
-      <div id="linksContainer">
-        <!-- Здесь будут отображаться добавленные ссылки и их названия -->
+            <button type="submit" class="link-form__button btn btn-primary">
+              Добавить ссылку
+            </button>
+          </form>
+        </div>
+
+        <div id="linksContainer" class="links-container d-flex gap-4">
+          <!-- Здесь будут отображаться добавленные ссылки и их названия -->
+        </div>
       </div>
     </section>
 

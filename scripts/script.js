@@ -1,3 +1,7 @@
+document.getElementById("newLinkButton").addEventListener("click", function () {
+  toggleLinkFormVisibility();
+});
+
 document.getElementById("linkForm").addEventListener("submit", function (event) {
   event.preventDefault();
   const linkInput = document.getElementById("link");
@@ -14,6 +18,7 @@ document.getElementById("linkForm").addEventListener("submit", function (event) 
   linkInput.value = "";
   linkNameInput.value = "";
   saveLinksToLocalStorage();
+  toggleLinkFormVisibility();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -22,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function displayLink(link, linkName) {
   const linksContainer = document.getElementById("linksContainer");
+
   const linkWrapper = document.createElement("div");
+  linkWrapper.classList.add("links-container__item");
 
   const linkElement = document.createElement("a");
   linkElement.href = link;
@@ -30,7 +37,7 @@ function displayLink(link, linkName) {
   linkWrapper.appendChild(linkElement);
 
   const deleteButton = document.createElement("button");
-  deleteButton.textContent = "Удалить";
+  deleteButton.classList.add("delete-button");
   deleteButton.addEventListener("click", function () {
       linksContainer.removeChild(linkWrapper);
       saveLinksToLocalStorage();
@@ -57,5 +64,18 @@ function loadLinksFromLocalStorage() {
       for (const link of links) {
           displayLink(link.link, link.linkName);
       }
+  }
+}
+
+function toggleLinkFormVisibility() {
+  const linkFormContainer = document.getElementById("linkFormContainer");
+  const button = document.getElementById("newLinkButton");
+
+  if (linkFormContainer.style.display === "none") {
+      linkFormContainer.style.display = "block";
+      button.textContent = "Отмена";
+  } else {
+      linkFormContainer.style.display = "none";
+      button.textContent = "Новый ярлык";
   }
 }

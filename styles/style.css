@@ -1,17 +1,57 @@
 
-body {
-  background-color: #353535;
-  
-}
-
 h1 {
   font-size: 64px;
 }
 
-.container {
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .header__container {
   height: 200px;
   margin-bottom: 38px;
+}
+
+body {
+  background-color: #353535;
+}
+
+/*
+========================================
+Ссылки
+========================================
+*/
+.Links {
+}
+
+.delete-button {
+  background: url(../images/icons8-мусор-128.png) center / contain no-repeat;
+  width: 27px;
+  height: 27px;
+  background-color: #212121;
+  border: 3px solid #212121;
+}
+
+/* ... Остальной CSS код ... */
+
+
+.link-form-container {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.link-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.links-container {
+  margin-top: 30px;
+}
+
+.links-container__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
